@@ -31,7 +31,7 @@
 		<div class="head">
 			<div class="logo">
 				<h1 class="logo-h">Ephemeral平台</h1>
-				<h2 class="license">项目已上传至<a>github</a>，请遵守Apache开源协议，注明代码出处</h2>
+				<h2 class="license">项目已上传至<a href="https://github.com/Ephemeral-Life/webChat">github</a>，请遵守Apache开源协议，注明代码出处</h2>
 			</div>
 			<div class="userNameShow">
 					<h2 id="userNameShow_h">点击发送按钮，设置你的聊天昵称</h2>
