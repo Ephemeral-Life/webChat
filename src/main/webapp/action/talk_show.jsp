@@ -124,6 +124,7 @@
 									}
 									if(!flag_exist)
 										allMassage.add(msg);
+									flag_exist = false;
 								}
 							}
 						}

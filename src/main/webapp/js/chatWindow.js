@@ -27,7 +27,7 @@ function fillterMoveTo()
 	(
 		function()
 		{
-			var speed=3;
+			var speed=1;
 			if(divMove.offsetLeft>=(1 * divNavigate.clientWidth))
 			{
 				clearInterval(timer);
@@ -37,8 +37,9 @@ function fillterMoveTo()
 				divMove.style.left=divMove.offsetLeft+speed+'px';
 				divMove.style.width=divMove.clientWidth-speed+"px";
 			}
-		},30
+		},1
 	);
+	document.getElementById('fillter').onclick=fillterMove();
 }
 function fillterMoveBack()
 {
@@ -50,7 +51,7 @@ function fillterMoveBack()
 	(
 		function()
 		{
-			var speed=3;
+			var speed=1;
 			if(divMove.offsetLeft<=0)
 			{
 				clearInterval(timerBack);
@@ -60,8 +61,9 @@ function fillterMoveBack()
 				divMove.style.left=divMove.offsetLeft-speed+'px';
 				divMove.style.width=divMove.clientWidth+speed+"px";
 			}
-		},30
+		},1
 	);
+	document.getElementById('fillter').onclick=fillterMove();
 }
 function fillterMove()
 {
@@ -70,10 +72,12 @@ function fillterMove()
 	if(divMove.offsetLeft<=0)
 	{
 		fillterMoveTo();
+		document.getElementById('fillter').onclick=null;
 	}
 	else
 	{
 		fillterMoveBack();
+		document.getElementById('fillter').onclick=null;
 	}
 }
 function checkTalkName(talkName)

@@ -47,7 +47,7 @@
 				<li><a href="action/login.jsp" target="iframe_talk_con">账号登录</a></li>
 				<li><a href="action/talk_con.jsp" target="iframe_talk_con">聊天窗口</a></li>
 				<li><a href="action/info.jsp" target="iframe_talk_con">个人资料</a></li>
-				<li><a href="javascript: fillterMove();">条件筛选</a></li>
+				<li><a href="javascript:void(0);" onclick="fillterMove()" id="fillter">条件筛选</a></li>
 				<li><a href="action/vip.jsp" target="iframe_talk_con">充值会员</a></li>
 				<li><a href="html/author.html" target="iframe_talk_con">关于我自己</a></li>
 			</ul>
