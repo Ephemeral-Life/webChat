@@ -99,7 +99,7 @@
 							<script type="text/javascript">
 								var Words = document.getElementById("words");
 								var str = '<div class="searching_alert"><span>你匹配到的人溜走了...</span></div>';
-								Words.innerHTML = Words.innerHTML + str;
+								Words.innerHTML = str;
 								missIt();
 							</script>
 						<%
@@ -146,6 +146,7 @@
 									}
 									if(!flag_exist)
 										allMassage.add(msg);
+									flag_exist = false;
 								}
 							}
 						}
