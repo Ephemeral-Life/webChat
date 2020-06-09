@@ -1,0 +1,144 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	background-image: url(../img/showAuthor.png);
+	background-repeat: no-repeat;
+}
+.box
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/showAuthor.png);
+	background-size:8px 16px;
+	    background-repeat: no-repeat;
+}
+.clearfix:after
+{
+	content: '';
+	display: block;
+	clear: both;
+}
+.div1
+{
+	width: 100%;
+	margin: 0 auto;
+	height: 10%;
+	background: #262a2d;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	display: inline-block;
+}
+.div1 div
+{
+	width: 100%;
+	margin: 0 auto;
+	height: 10%;
+	background: #262a2d;
+	z-index: 1000;
+}
+.div2
+{
+	width: 1200px;
+	margin: 0 auto;
+	height: 1500px;
+	background: #1b1f23;
+	z-index: 20000;
+	margin-top: 500px;
+}
+.content_cover
+{
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	background: #1b1f23;
+	z-index: 0;
+}
+		
+.container
+{
+	position: absolute;
+	top: 31.5%;
+	left: 59.5%;
+	display: inline-block;
+}
+.container span 
+{
+	display: inline-block;
+	color: red;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 25px;
+	animation: side-slide 4s forwards infinite;
+	transform: translateX(-100vw) scale(0);
+	filter: opacity(5);
+	animation-delay: calc((var(--n) - 1) * 0.05s);
+}
+
+@keyframes side-slide
+{
+	15%, 20%
+	{
+		transform: translateX(0.5em) scale(1);
+		color: purple;
+	}
+	24% 
+	{
+		transform: translateX(0) scale(1.2);
+		color: cyan;
+	}
+	25%, 75% 
+	{
+		transform: translateX(0) scale(1);
+		filter: opacity(1);
+		color: red;
+	}
+	90%, 100% 
+	{
+		transform: translateX(100vw) scale(0);
+		filter: opacity(0);
+	}
+}
+
+.container span:nth-child(1) { --n: 1; }
+.container span:nth-child(2) { --n: 2; }
+
+.title-p
+{
+	position: absolute;
+	left: 30%;
+	display: inline-block;
+	color: white;
+	font-size: 25px;
+	font-family: "楷体";
+}
+.title-span
+{
+	font-family: "楷体";
+}
+.picList1
+{
+	position: absolute;
+	top: 2%;
+	left: 0;
+	width: 90%;
+}
+.picList1 img
+{
+	width: 111%;
+}
+.picList2
+{
+	position: absolute;
+	top: 49%;
+	left: 0;
+	width: 90%;
+}
+.picList2 img
+{
+	width: 111%;
+}

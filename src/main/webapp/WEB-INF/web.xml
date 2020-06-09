@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <listener>
+    <listener-class>listener.MyListener</listener-class>
+  </listener>
+  
+  <servlet>
+    <servlet-name>do_getIp</servlet-name>
+    <servlet-class>servlet.do_getIp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>do_getIp</servlet-name>
+    <url-pattern>/servlet/do_getIp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>do_exit</servlet-name>
+    <servlet-class>servlet.do_exit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>do_exit</servlet-name>
+    <url-pattern>/servlet/do_exit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>do_unRegis</servlet-name>
+    <servlet-class>servlet.do_unRegis</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>do_unRegis</servlet-name>
+    <url-pattern>/servlet/do_unRegis</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>do_catchUser</servlet-name>
+    <servlet-class>servlet.do_catchUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>do_catchUser</servlet-name>
+    <url-pattern>/servlet/do_catchUser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>do_blank</servlet-name>
+    <servlet-class>servlet.do_blank</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>do_blank</servlet-name>
+    <url-pattern>/servlet/do_blank</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>do_sentMassage</servlet-name>
+    <servlet-class>servlet.do_sentMassage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>do_sentMassage</servlet-name>
+    <url-pattern>/servlet/do_sentMassage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>do_account_login</servlet-name>
+    <servlet-class>servlet.do_account_login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>do_account_login</servlet-name>
+    <url-pattern>/servlet/do_account_login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>do_register</servlet-name>
+    <servlet-class>servlet.do_register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>do_register</servlet-name>
+    <url-pattern>/servlet/do_register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>do_redirecter</servlet-name>
+    <servlet-class>servlet.do_redirecter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>do_redirecter</servlet-name>
+    <url-pattern>/servlet/do_redirecter</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>do_verify</servlet-name>
+    <servlet-class>servlet.do_verify</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>do_verify</servlet-name>
+    <url-pattern>/servlet/do_verify</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>do_newVip</servlet-name>
+    <servlet-class>servlet.do_newVip</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>do_newVip</servlet-name>
+    <url-pattern>/servlet/do_newVip</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>do_moreVip</servlet-name>
+    <servlet-class>servlet.do_moreVip</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>do_moreVip</servlet-name>
+    <url-pattern>/servlet/do_moreVip</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>do_setInfo</servlet-name>
+    <servlet-class>servlet.do_setInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>do_setInfo</servlet-name>
+    <url-pattern>/servlet/do_setInfo</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+	<filter-name>CharacterFilter</filter-name>
+	<filter-class>filter.CharacterFilter</filter-class>
+	<init-param>
+	  <param-name>encode</param-name>
+	  <param-value>UTF-8</param-value>
+	</init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>CharacterFilter</filter-name>
+    <url-pattern>/servlet/*</url-pattern>
+  </filter-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <session-config>
+    <session-timeout>600</session-timeout>
+  </session-config>
+</web-app>

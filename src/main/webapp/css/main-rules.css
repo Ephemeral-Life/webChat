@@ -1,0 +1,414 @@
+.talk_con
+{
+    width:600px;
+    height:500px;
+    border:1px solid #666;
+    margin:50px auto 0;
+    background:#c8c8a9;
+}
+.talk_show
+{
+	width:580px;
+	height:420px;
+	background:#dcdcbb;
+	overflow:auto;
+}
+.talk_input
+{
+	width:580px;
+	margin:10px auto 0;
+}
+.whotalk
+{
+	width:80px;
+	height:30px;
+	float:left;
+	outline:none;
+}
+.talk_word
+{
+	width:420px;
+	height:26px;
+	padding:0px;
+	float:left;
+	margin-left:10px;
+	outline:none;
+	text-indent:10px;
+}
+.talk_start
+{
+	width:72px;
+	height:30px;
+	float:left;
+	margin-left:10px;
+	outline:none;
+}  
+.talk_sub
+{
+	width:50px;
+	height:30px;
+	float:left;
+	margin-left:10px;
+}
+.atalk
+{
+	margin:10px; 
+}
+.atalk span
+{
+	display:inline-block;
+	background:#0181cc;
+	border-radius:10px;
+	color:#fff;
+	padding:5px 10px;
+}
+.btalk
+{
+	margin:10px;
+	text-align:right;
+}
+.btalk span
+{
+	display:inline-block;
+	background:#ef8201;
+	border-radius:10px;
+	color:#fff;
+	padding:5px 10px;
+}
+
+html,body {height: 100%; padding: 0; margin: 0;background: #1b1f23;}
+.box{height: 100%; padding: 40px 0 0; box-sizing: border-box; position: relative;background: #262a2d;}
+.head
+{
+	background: #1b1f23;
+	height: 5.1%; position: absolute; top: 0 ; left: 0 ; width: 100%;
+	border-width: 0 0 1px 0;
+	border-style: solid;
+	border-color: black;
+	z-index: 2;
+}
+.logo
+{
+	position: absolute;top: 25%; left: 1.5%;
+}
+.logo-h
+{
+	color:white;
+	font-family: "仿宋";
+	display: inline-block;
+}
+.license
+{
+	color:white;
+	font-family: "仿宋";
+	display: inline-block;
+	position:relative;
+	left: 2.5%;
+}
+.userNameShow
+{
+	position: absolute;top: 25%; right: 12%;
+}
+.userNameShow h2
+{
+	color:white;
+	font-family: "仿宋";
+}
+.exitShow
+{
+	position: absolute;top: 25%; right: 1.5%
+}
+.head a
+{
+	text-decoration:none;
+	color: red;
+}
+.head a:hover,a:active
+{
+	background-color: #262a2d;
+}
+
+/*导航栏*/
+.navigate
+{
+	position: absolute;
+	top: 5.2%;
+	background: #1b1f23;
+	width: 10%;
+	height: 94.8%;
+	z-index: 2;
+}
+.navigate-ul
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.navigate a
+{
+	display:block;
+	background: #1b1f23;
+	color:white;
+	font-family: "仿宋";
+	width:100%;
+	text-align:center;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	text-decoration:none;
+}
+
+.navigate a:hover,a:active
+{
+	background-color:#262a2d;
+}
+
+/*过滤栏*/
+.filter
+{
+	position: absolute;
+	top: 0%;
+	background: #262a2d;
+	width: 10%;
+	height: 100%;
+	border-width: 0 0 0 0;
+	border-right: 1px;
+	border-style: solid;
+	border-color: black;
+}
+.filter-ul
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.filter p
+{
+
+	display:block;
+	background: #262a2d;
+	color:white;
+	font-family: "仿宋";
+	width:100%;
+	text-align:center;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	text-decoration:none;
+}
+
+.filter a:hover,a:active
+{
+	background-color:#262a2d;
+}
+
+/*内容*/
+.content
+{
+	background: #1b1f23;
+	position: absolute; top: 5.19% ; left: 0% ; width: 99.9%; height: 94.6%;
+	border-width: 1px 0 0 0;
+	border-left: 1px;
+	border-top: 1px;
+	border-style: solid;
+	border-color: black;
+	background: #1b1f23;
+}
+.content-table
+{
+	position: absolute; top: 1% ; left: 2.8% ; width: 94.2%; height: 94.2%; overflow:auto;
+	background: #1b1f23;
+}
+
+.content-table td
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 14.1px;
+	padding-right: 14.1px;
+}
+.content-table a
+{
+	color:greenyellow;
+	text-decoration:none;
+}
+.content-table .title-a
+{
+	color:black;
+	text-decoration:none;
+}
+.content-table .table-choose-box
+{
+	width: 5%;
+}
+.content-table .table-number
+{
+	width: 5%;
+}
+.content-table .table-delect-a
+{
+	color: #FF0000;
+}
+.content-table .table-file
+{
+	width: 30%;
+}
+.content-table .table-time
+{
+	width:9%
+}
+.content-table .table-note
+{
+	width: 31%;
+}
+.content-table .table-download
+{
+	width: 6%;
+}
+.content-table .table-move
+{
+	width: 5%;
+}
+.content-table .table-copy
+{
+	width: 5%;
+}
+.content-table .table-delect
+{
+	width: 5%;
+}
+.download-a
+{
+	text-decoration:none;
+}
+.dir-a
+{
+	color:#262a2d;
+}
+.content-table .dir-a-span
+{
+	color:black;
+}
+.iframe_talk_con
+{
+	position: absolute;
+	left: 10%;
+	height: 99%;
+	width: 80%;
+}
+/*询问用户名*/
+.float-cover-getName
+{
+	background-color:rgba(255, 255, 255, 0.5); 
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0; left: 0;
+	display: none;
+}
+.float-cover-getName .getName-p
+{
+	display: inline;
+	color: black;
+}
+.float-cover-getName .getName-input
+{
+	display: inline-block;
+	width: 150px;
+}
+.float-cover-getName .cover-float
+{
+	position: fixed;
+	top: 35%; left: 40%;
+}
+.exe_jsp
+{
+	display: none;
+}
+.searching_note
+{
+	margin:10px; 
+}
+.searching_note span
+{
+	display:inline-block;
+	background:#42c861;
+	border-radius:10px;
+	color:#fff;
+	padding:5px 10px;
+}
+.searching_alert
+{
+	margin:10px; 
+}
+.searching_alert span
+{
+	display:inline-block;
+	background:#ff0000;
+	border-radius:10px;
+	color:#fff;
+	padding:5px 10px;
+}
+.talk_show_iframe
+{
+	width:580px;
+	height:420px;
+	border:1px solid #666;
+	background:#dcdcbb;
+	margin:10px auto 0;
+	position: relative;
+	left: 1.5%;
+}
+
+.box
+{
+	background-color: #1b1f23;	
+}
+.box p
+{
+	font-family: "楷体";
+	color:white;
+}
+.box table
+{
+	position: absolute;
+	left: 40%;
+	top: 25%;
+}
+
+.box-info
+{
+	background-color: #1b1f23;	
+}
+.box-info p
+{
+	font-family: "楷体";
+	color:white;
+	font-size: 20px;
+}
+.box-info table
+{
+	position: absolute;
+	left: 40%;
+	top: 1%;
+}
+
+.box-author-info
+{
+	background-color: #1b1f23;	
+}
+.box-author-info p
+{
+	font-family: "楷体";
+	color:white;
+	font-size: 20px;
+}
+.box-author-info table
+{
+	position: absolute;
+	left: 20%;
+	top: 0%;
+}
+.box-author-info span
+{
+	color: white;
+    font-family: 楷体;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Ephemeral.webChat.dao.infoDao">
+    <!-- 查询信息 -->
+    <select id="getInfo" resultType="info">
+        select * from info where account_id = #{aid};
+    </select>
+    <!-- 删除信息 -->
+    <delete id="delInfo">
+    	delete from info where account_id = #{aid};
+    </delete>
+    <insert id="insertInfo" parameterType="info">
+    	insert info values(#{no}, #{account_id}, #{sex}, #{age})
+    </insert>
+</mapper>

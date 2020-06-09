@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- 实体类 -->
+	<bean id="findLastIdEntity" class="Ephemeral.webChat.entity.findLastIdEntity"></bean>
+	<bean id="info" class="Ephemeral.webChat.entity.info"></bean>
+	<bean id="massage" class="Ephemeral.webChat.entity.massage"></bean>
+	<bean id="online" class="Ephemeral.webChat.entity.online"></bean>
+	<bean id="user" class="Ephemeral.webChat.entity.user"></bean>
+	<bean id="vip" class="Ephemeral.webChat.entity.vip"></bean>
+	
+	<!-- 服务层 -->
+	<bean id="infoService" class="Ephemeral.webChat.service.impl.infoServiceImpl"></bean>
+	<bean id="massageService" class="Ephemeral.webChat.service.impl.massageServiceImpl"></bean>
+	<bean id="onlineService" class="Ephemeral.webChat.service.impl.onlineServiceImpl"></bean>
+	<bean id="userService" class="Ephemeral.webChat.service.impl.userServiceImpl"></bean>
+	<bean id="vipService" class="Ephemeral.webChat.service.impl.vipServiceImpl"></bean>
+</beans>

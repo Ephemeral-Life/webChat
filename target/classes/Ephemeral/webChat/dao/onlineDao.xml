@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Ephemeral.webChat.dao.onlineDao">
+    <!-- 插入新的在线状态 -->
+    <insert id="newOnlineUser" parameterType="online">
+    	insert online values(#{no}, #{user_name}, #{account_id}, #{ip}, #{chat_with_no})
+    </insert>
+    <!-- 上线活跃用户 -->
+    <update id="pullUpOnlineUser">
+    	update online set chat_with_no = 0 where no = #{uno};
+    </update>
+    <!-- 下线活跃用户 -->
+    <delete id="pullDownOnlineUser">
+    	delete from online where no = #{uno};
+    </delete>
+    <!-- 查询聊天连接 -->
+    <select id="checkConnect" resultType="online">
+    	select * from online where chat_with_no = #{uno}
+    </select>
+    <!-- 建立聊天连接 -->
+    <update id="buildConnect">
+    	update online set chat_with_no = #{chat_with_no} where no = #{no}
+    </update>
+    <!-- 抓一个人聊天 -->
+    <select id="catchOneToChat" resultType="online">
+		select * from online where chat_with_no = 0 and no != #{uid} limit 0,1
+    </select>
+    <!-- 放这个人走-->
+    <update id="disConnect">
+    	update online set chat_with_no = 0 where no = #{uno} or chat_with_no = #{uno};<!-- 放走这个人and放走自己 -->
+    </update>
+    <!-- 查询指定uid的uname -->
+    <select id="getUserName" resultType="string">
+		select user_name from online where no = #{no}
+    </select>
+    <!-- 查询指定uid的ip -->
+    <select id="getUserIp" resultType="string">
+		select ip from online where no = #{no}
+    </select>
+</mapper>

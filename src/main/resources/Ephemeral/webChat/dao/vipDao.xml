@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Ephemeral.webChat.dao.vipDao">
+    <!-- 查询vip状态 -->
+    <select id="checkVip" resultType="vip">
+    	select * from vip where account_id = #{aid};
+    </select>
+    <!-- 插入新vip用户 -->
+    <insert id="newVip" parameterType="vip">
+    	insert vip values(#{no}, #{account_id}, #{vip_start}, #{vip_end})
+    </insert>
+    <!-- 续费vip -->
+    <update id="moreVip">
+    	update vip set vip_end = DATE_ADD(vip_end, interval 3 MONTH) where account_id = #{account_id}
+    </update>
+</mapper>
